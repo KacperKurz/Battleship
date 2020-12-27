@@ -1,0 +1,22 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"npm index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KacperKurz/Battleship.git"
+  },
+  "author": "Kacper Kurz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KacperKurz/Battleship/issues"
+  },
+  "homepage": "https://github.com/KacperKurz/Battleship#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
