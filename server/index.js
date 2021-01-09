@@ -1,7 +1,10 @@
 const express = require('express');
+const cors = require('cors');
+const { v4: uuidv4 } = require('uuid')
 const app = express();
 app.use(express.json());
-const port = 3000;
+app.use(cors());
+const port = 3030;
 
 let games = {};
 
@@ -12,7 +15,22 @@ const chceckWinCondition = board => {
 }
 
 app.get('/', (req, res) => {
-  res.send(games);
+  res.send(Object.keys(games));
+})
+
+app.post('/new', (req,res) =>{
+  id = uuidv4()
+  games[id]={}
+  res.send(id)
+})
+
+app.get('/:id',(req,res)=>{
+  res.send(games[req.params.id])
+})
+
+app.post('/join/:id',(req,res)=>{
+  games[req.params.id][req.body.player]={}
+  res.send()
 })
 
 app.post('/',(req, res) => {
@@ -47,3 +65,4 @@ app.patch('/:field', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 })
+
