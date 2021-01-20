@@ -52,6 +52,7 @@ app.patch('/:field', (req, res) => {
   if (chceckWinCondition(games[req.body.id][req.body.player].guess)){
     games[req.body.id][req.body.player].res.send("You won!")
     games[req.body.id][req.body.player==1?2:1].res.send("You lost!")
+      delete games[req.body.id]
   }
   else{
     //send

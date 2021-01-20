@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
+import Game from './Game.js'
 const axios = require('axios');
 
 
-function Lobby(){
+function Lobby(props){
     
     const [games,setGames] = useState([])
     const [popup,setPopup] = useState()
@@ -13,8 +14,8 @@ function Lobby(){
         setGames(res.data)
     })
     }
-    
-    if (!games.length){
+
+    if (games===[]){
         getIds()
     }
 
@@ -22,12 +23,14 @@ function Lobby(){
         axios.post('http://localhost:3030/join/'+id,{
             player: player
         })
+        props.setter(<Game id={id} player={player}/>)
     }
 
     const clickJoin = (id)=>{
         axios.get('http://localhost:3030/'+id).then(res=>{
             let button1
             let button2
+
             if (typeof res.data[1] != "undefined" && !Object.keys(res.data[1]).length)
             {
                 button1=<button onClick={()=>joinGame(id,1)} disabled>player 1</button>
@@ -35,7 +38,7 @@ function Lobby(){
             else{
                 button1=<button onClick={()=>joinGame(id,1)}>player 1</button>
             }
-            if (typeof res.data[2] != "undefined" && !Object.keys(res.data[1]).length){
+            if (typeof res.data[2] != "undefined" && !Object.keys(res.data[2]).length){
                 button2=<button onClick={()=>joinGame(id,2)} disabled>player 2</button>
             }
             else{
@@ -55,8 +58,8 @@ function Lobby(){
         </div>
     })
 
-    
-    
+
+
     return<>
     <button onClick={()=>{axios.post('http://localhost:3030/new'); getIds()}}>New room</button>
     {display}
