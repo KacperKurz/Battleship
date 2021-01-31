@@ -25,6 +25,7 @@ function Lobby(props){
             player: player
         })
         props.setter(<Game id={id} player={player}/>)
+        props.idSetter(id)
     }
 
     const spectateGame = id=>{
