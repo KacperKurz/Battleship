@@ -10,10 +10,11 @@ function Setup(props){
 
     const handleClick = ()=>{
         setButton(<button onClick={handleClick} disabled>Ready</button>)
-        axios.post('http://localhost:3030/',{id: props.id,
+        axios.post('http://192.168.0.6:3030/',{id: props.id,
             player: props.player,
             board: field}).then((res)=>{
-            props.setter(<Turn id={props.id} player={props.player} filed={field} setter={props.setter}/>)
+                console.log("got response")
+            props.setter(<Turn id={props.id} player={props.player} board={field} setter={props.setter}/>)
         })
     }
 
@@ -66,11 +67,25 @@ function Setup(props){
     }
 
     return <div>
-        <div className="grid">
-            {generateButtons()}
+        <div className={"main"}>Place your ships</div>
+        <div className={"flex"}>
+            <div className="grid">
+                {generateButtons()}
+            </div>
+            <div className={"legend"}>Length:
+                <ul>
+                    <li>4*2 fields</li>
+                    <li>3*3 fields</li>
+                    <li>2*4 fields</li>
+                    <li>1*6 fields</li>
+                </ul>
+            </div>
         </div>
-        {button}
+
+        <div className={"confirm"}>{button}</div>
     </div>
 }
 
 export default Setup
+
+//TODO:prevent additional clicks

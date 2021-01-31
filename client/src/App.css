@@ -55,3 +55,49 @@ div.grid{
   margin-top: 10vh;
 }
 
+
+button.empty{
+
+}
+
+button.guessedEmpty{
+background-color: black;
+}
+
+button.guessedShip{
+background-color: red;
+}
+
+button.ship{
+  background-color: blue;
+}
+
+div.flex{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+div.main{
+  text-align: center;
+  font-size: 5rem;
+  /*margin-right: 10%;*/
+}
+
+div.legend{
+  font-size: 2rem;
+  text-align: start;
+}
+li{
+  /*margin-right: 20%;*/
+}
+
+div.confirm{
+  display: flex;
+  justify-content: center;
+}
+
+div.confirm>button{
+  font-size: 5rem;
+  margin-right: 14%;
+}
