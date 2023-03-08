@@ -21,7 +21,7 @@
     <a href="https://github.com/KacperKurz/Battleship"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/KacperKurz/Battleship/issues">Report Bug</a>
+    <a href="https://github.com/KacperKurz/Battleship/issues">Battleshiprt Bug</a>
     ·
     <a href="https://github.com/KacperKurz/Battleship/issues">Request Feature</a>
   </p>
@@ -56,11 +56,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](screenshots/Screenshot_1.png)
-[![Product Name Screen Shot][product-screenshot]](screenshots/Screenshot_2.png)
-[![Product Name Screen Shot][product-screenshot]](screenshots/Screenshot_3.png)
-[![Product Name Screen Shot][product-screenshot]](screenshots/Screenshot_4.png)
-[![Product Name Screen Shot][product-screenshot]](screenshots/Screenshot_5.png)
+![](screenshots/Screenshot_1.png)
+![](screenshots/Screenshot_2.png)
+![](screenshots/Screenshot_3.png)
+![](screenshots/Screenshot_4.png)
+![](screenshots/Screenshot_5.png)
 
 
 ### Built With
@@ -85,7 +85,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
+1. Clone the Battleship
    ```sh
    git clone https://github.com/KacperKurz/Battleship.git
    ```
@@ -149,15 +149,15 @@ Project Link: [https://github.com/KacperKurz/Battleship](https://github.com/Kacp
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/KacperKurz/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/KacperKurz/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/KacperKurz/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/KacperKurz/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/KacperKurz/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/KacperKurz/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/KacperKurz/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/KacperKurz/repo/issues
-[license-shield]: https://img.shields.io/github/license/KacperKurz/repo.svg?style=for-the-badge
-[license-url]: https://github.com/KacperKurz/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/KacperKurz/Battleship.svg?style=for-the-badge
+[contributors-url]: https://github.com/KacperKurz/Battleship/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/KacperKurz/Battleship.svg?style=for-the-badge
+[forks-url]: https://github.com/KacperKurz/Battleship/network/members
+[stars-shield]: https://img.shields.io/github/stars/KacperKurz/Battleship.svg?style=for-the-badge
+[stars-url]: https://github.com/KacperKurz/Battleship/stargazers
+[issues-shield]: https://img.shields.io/github/issues/KacperKurz/Battleship.svg?style=for-the-badge
+[issues-url]: https://github.com/KacperKurz/Battleship/issues
+[license-shield]: https://img.shields.io/github/license/KacperKurz/Battleship.svg?style=for-the-badge
+[license-url]: https://github.com/KacperKurz/Battleship/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/KacperKurz
+[linkedin-url]: https://linkedin.com/in/kacper-kurz-175707199/
