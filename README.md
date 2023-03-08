@@ -25,7 +25,7 @@
     ·
     <a href="https://github.com/KacperKurz/Battleship/issues">Request Feature</a>
   </p>
-</p>
+
 
 
 
