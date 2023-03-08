@@ -21,7 +21,7 @@
     <a href="https://github.com/KacperKurz/Battleship"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/KacperKurz/Battleship/issues">Battleshiprt Bug</a>
+    <a href="https://github.com/KacperKurz/Battleship/issues">Report Bug</a>
     ·
     <a href="https://github.com/KacperKurz/Battleship/issues">Request Feature</a>
   </p>
