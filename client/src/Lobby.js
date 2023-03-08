@@ -11,7 +11,7 @@ function Lobby(props){
 
 
     const  getIds = ()=>{
-        axios.get('http://192.168.0.6:3030/').then(res=>{
+        axios.get('http://localhost:3030/').then(res=>{
         setGames(res.data)
     })
     }
@@ -21,7 +21,7 @@ function Lobby(props){
     }
 
     const joinGame = (id,player) =>{
-        axios.post('http://192.168.0.6:3030/join/'+id,{
+        axios.post('http://localhost:3030/join/'+id,{
             player: player
         })
         props.setter(<Game id={id} player={player}/>)
@@ -33,7 +33,7 @@ function Lobby(props){
     }
 
     const clickJoin = (id)=>{
-        axios.get('http://192.168.0.6:3030/'+id).then(res=>{
+        axios.get('http://localhost:3030/'+id).then(res=>{
             let button1
             let button2
 
@@ -68,7 +68,7 @@ function Lobby(props){
 
 
     return<>
-    <button onClick={()=>{axios.post('http://192.168.0.6:3030/new'); getIds()}}>New room</button>
+    <button onClick={()=>{axios.post('http://localhost:3030/new'); getIds()}}>New room</button>
     {display}
     {popup}
     </>

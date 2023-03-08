@@ -14,7 +14,7 @@ function PublicChat(props){
 
 
     if (client===undefined){
-        setClient(mqtt.connect('mqtt://192.168.0.6:8000/'))
+        setClient(mqtt.connect('mqtt://localhost:8000/'))
     }
 
 

@@ -52,7 +52,7 @@ function Spectate(props){
     const [board2,setBoard2]=useState(generateBoard(initialGuess))
 
     const playTurn = ()=>{
-        axios.post("http://192.168.0.6:3030/spectate",{
+        axios.post("http://localhost:3030/spectate",{
             id: props.id
         }).then((res)=>{
             if (res.data==="Player 1 won!" || res.data==="Player 2 won!"){

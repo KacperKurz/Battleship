@@ -10,7 +10,7 @@ function Setup(props){
 
     const handleClick = ()=>{
         setButton(<button onClick={handleClick} disabled>Ready</button>)
-        axios.post('http://192.168.0.6:3030/',{id: props.id,
+        axios.post('http://localhost:3030/',{id: props.id,
             player: props.player,
             board: field}).then((res)=>{
                 console.log("got response")

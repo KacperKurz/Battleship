@@ -71,7 +71,7 @@ function Turn(props){
     const playTurn = (field)=>{
         setDisableButtons(true)
         setTurn(<div className={"main"} style={{color: "red"}}>Enemy turn</div>)
-        axios.patch("http://192.168.0.6:3030/"+String(field),{
+        axios.patch("http://localhost:3030/"+String(field),{
             id: props.id,
             player: props.player,
         }).then((res)=>{
